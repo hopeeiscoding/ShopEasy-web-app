@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 #  Config FIRST
 app.config["SECRET_KEY"] = "change-this-to-any-random-string"
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:@localhost/shopeasy"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///shopeasy.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 #  Extensions AFTER config
